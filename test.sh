@@ -38,17 +38,17 @@ diff /tmp/$$-ans /tmp/$$-result || echo "テスト1-7" >> /tmp/$$-error.log
 ## 2 4 -> 2
 echo "2" > /tmp/$$-ans
 ./main.sh 2 4 > /tmp/$$-result
-diff /tmp/$$-ans /tmp/$$-result || echo "テスト3-1" >> /tmp/$$-error.log
+diff /tmp/$$-ans /tmp/$$-result || echo "テスト2-1" >> /tmp/$$-error.log
 
 ## 1000 100 -> 100
 echo "100" > /tmp/$$-ans
 ./main.sh 1000 100 > /tmp/$$-result
-diff /tmp/$$-ans /tmp/$$-result || echo "テスト3-2" >> /tmp/$$-error.log
+diff /tmp/$$-ans /tmp/$$-result || echo "テスト2-2" >> /tmp/$$-error.log
 
 ## 12 8 -> 4
 echo "4" > /tmp/$$-ans
 ./main.sh 12 8 > /tmp/$$-result
-diff /tmp/$$-ans /tmp/$$-result || echo "テスト3-3" >> /tmp/$$-error.log
+diff /tmp/$$-ans /tmp/$$-result || echo "テスト2-3" >> /tmp/$$-error.log
 
 # 結果を比較
 if [ -f /tmp/$$-error.log ];then
